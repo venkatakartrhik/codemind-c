@@ -3,14 +3,20 @@ int main()
 {
     int n,i;
     scanf("%d",&n);
-    for(i=0;i<=n;i++)
+    int c=0;
+    for(i=1;i<=n;i++)
     {
-        if(n==i*i)
+        if(i*i==n)
         {
-            printf("True");
-            return 0;
+            c=c+1;
         }
     }
-    printf("False");
-    return 0;
+    if(c==1)
+    {
+        printf("True");
+    }
+    else{
+        printf("False");
+    }
+
 }
